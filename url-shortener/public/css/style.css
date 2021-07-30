@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cutive+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    padding: 0 10px;
+}
+
+.container {
+    padding: 2.2em 1.2em;
+    border: .01em solid #ccc;
+    box-shadow: 0 0 1em #ccc;
+}
+
+textarea, input, button {
+    border: none;
+    outline: none;
+}
+
+label, button {
+    font-family: "Anton";
+}
+
+button {
+    color: #fff;
+    background-color: #ffd267;
+    cursor: pointer;
+    transition: background-color .2s;
+    border: .02em solid #e8c87b;
+}
+
+button:not([disabled]):hover {
+    background-color: #ffba41;
+    border-color: #d0aa4e;
+}
+
+button[disabled] {
+    color: #bdbdbd;
+    background-color: #f0f0f0;
+    cursor: default;
+    border-color: #ccc !important;
+}
+
+.long {
+    margin-bottom: 1em;
+}
+
+.long .input {
+    display: flex;
+}
+
+.long textarea {
+    resize: none;
+    width: 80%;
+    height: 5em;
+    padding: .5em .7em;
+    background-color: #fff;
+    border: .05em solid #bdbdbd;
+    border-right: none;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+}
+
+input, .long textarea, .long textarea::placeholder {
+    font-size: 1.2em;
+    font-family: "Cutive Mono", monospace;
+}
+
+.long textarea::placeholder {
+    font-size: 1.1em;
+}
+
+.long button {
+    width: 20%;
+    border-left: none;
+    border-top-right-radius: .2em;
+    border-bottom-right-radius: .2em;
+    font-size: 2.8em;
+    line-height: .6em;
+    padding-top: .3em;
+    text-shadow: 0 .015em 0 #927629;
+}
+
+.long button[disabled]{
+    text-shadow: 0 -.015em 0 #959595;
+}
+
+.long button span {
+    font-size: .4em !important;
+}
+
+.short {
+    display: flex;
+    padding: .5em 1em;
+    border-radius: .3em;
+}
+
+.short label {
+    color: #ffb529;
+    font-size: 2.1em;
+    text-shadow: 0 .015em 0 #927629;
+}
+
+.short input {
+    margin-left: .3em;
+    background-color: #fff;
+    padding: .1em .4em;
+    font-size: 2em;
+    width: 5.2em;
+    border-radius: .25em;
+    border: .02em solid #bdbdbd;
+}
+
+.short input.empty:not(:focus) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button {
+    flex-grow: 1;
+    margin-left: .3em;
+    line-height: 1.8;
+    border-radius: .3em;
+    font-size: 1.8em;
+    text-shadow: 0 .02em 0 #927629;
+}
+
+.controls button[disabled]{
+    text-shadow: 0 -.02em 0 #959595;
+}
+
+.controls button:first-child {
+    margin-left: 0;
+}
+
+.error, .info {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+.error {
+    font-family: "Cutive Mono", monospace;
+    color: red;
+}
+
+.info {
+    font-family: "Cutive Mono", monospace;
+    color: green;
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 2.3vw;
+    }
+}
+
+@media (min-width: 1100px) {
+    body {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    body {
+        font-size: 1.7vw;
+    }
+}
+
+
