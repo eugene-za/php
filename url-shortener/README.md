@@ -15,7 +15,7 @@ My implementation of the MVC pattern. Service for shortening links, taking into 
 
 - **Server:** Apache
 - **Interpreter:** PHP 8
-- **Database:** MySQL
+- **DBMS:** MySQL
 
 ###### **Installation:**
 
